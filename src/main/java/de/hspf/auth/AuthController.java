@@ -22,6 +22,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.UUID;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.POST;
 
 @Path("/auth")
@@ -33,6 +34,7 @@ public class AuthController {
 
     @POST
     @Path("/signup")
+    @Transactional
     public Response postSignUp(Account account) {
         return Response.ok(this.authService.handleSignUp(account)).build();
     }

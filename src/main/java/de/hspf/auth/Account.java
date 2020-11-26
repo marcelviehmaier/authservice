@@ -5,15 +5,28 @@
  */
 package de.hspf.auth;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.NamedQuery;
+import javax.persistence.Table;
+
 /**
  *
  * @author Marcel
  */
+@Entity
+@Table(name = "account")
+@NamedQuery(name = "Account.findAll", query = "SELECT a FROM Account a")
 public class Account {
     
+    @Id
     private int id;
+    @Column
     private String username;
+    @Column
     private String email;
+    @Column
     private String password;
 
     public String getUsername() {
