@@ -15,7 +15,7 @@ To run the project you need an application server. For this purpose, Payara Micr
 
 ## Documentation
 When the service is running, you can use the REST-Endpoints to use the functionality.
-1. http://localhost:8080/authservice/data/auth/singup with http method POST and the body:
+1. http://localhost:8080/authservice/data/auth/signup with http method POST and the body:
 `{
     "username": "",
     "email": "",
