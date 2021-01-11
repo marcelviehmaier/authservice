@@ -48,13 +48,14 @@ public class JWTTokenProvider {
         token.setIss("http://localhost:8080");  // Must match the expected issues configuration values
         token.setJti(UUID.randomUUID().toString());
 
-        token.setSub(account.getUsername());  // Sub is required for WildFly Swarm
+        token.setSub(account.getEmail());  // Sub is required for WildFly Swarm
         token.setUpn(account.getEmail());
 
         token.setIat(System.currentTimeMillis());
         token.setExp(System.currentTimeMillis() + 30000000); // 30 Seconds expiration!
 
         token.addAdditionalClaims("appl", "homeimprovement");
+        token.addAdditionalClaims("username", account.getUsername());
         token.setGroups(Arrays.asList("user", "student", "protected"));
         token.setGroups(Arrays.asList("user", "student", "protected"));
 

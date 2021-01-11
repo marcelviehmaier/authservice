@@ -37,7 +37,7 @@ public class AuthService {
     public String handleLogin(Account account){
         if(account.getPassword().equals(this.authRepository.getAccountByEmail(account).getPassword())){
             this.logger.info("Correct credentials. Create JWT...");
-            String token = this.tokenProvider.generateJWT(account);
+            String token = this.tokenProvider.generateJWT(this.authRepository.getAccountByEmail(account));
             return token;
         }
         this.logger.info("Not able to login user. Maybe wrong credentials?");
