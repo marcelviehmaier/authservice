@@ -26,7 +26,7 @@ public class AuthService {
     
     public String handleSignUp(Account account){
         if(authRepository.userExists(account)){
-            this.logger.log(Level.INFO, "User with username {0} already exists", account.getUsername());
+            this.logger.log(Level.INFO, "Return existing user with username {0}", account.getUsername());
             return "FAILED";
         }
         this.logger.info("Register new user");

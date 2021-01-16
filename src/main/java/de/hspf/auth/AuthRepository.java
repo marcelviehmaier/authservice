@@ -26,7 +26,6 @@ public class AuthRepository implements Serializable {
     private EntityManager entityManager;
 
     public Account safeUser(Account account) {
-        logger.log(Level.INFO, "Save user: {0}", account.getUsername());
         entityManager.persist(account);
         return account;
     }

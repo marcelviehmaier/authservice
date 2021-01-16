@@ -7,7 +7,6 @@ package de.hspf.jwt;
 
 import de.hspf.auth.Account;
 import de.hspf.auth.AuthController;
-import de.hspf.authservice.secure.MPJWTToken;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.auth.PubSecKeyOptions;
 import io.vertx.ext.auth.jwt.JWTAuth;

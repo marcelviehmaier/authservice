@@ -1,4 +1,4 @@
-package de.hspf.authservice.secure;
+package de.hspf.jwt;
 
 import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
