@@ -1,0 +1,16 @@
+de\hspf\authservice\AuthserviceRestApplication.class
+de\hspf\authservice\health\ServiceLiveHealthCheck.class
+de\hspf\jwt\JWTTokenProvider.class
+de\hspf\authservice\health\ServiceReadyHealthCheck.class
+de\hspf\authservice\client\Service.class
+de\hspf\authservice\HelloController.class
+de\hspf\auth\AuthController.class
+de\hspf\auth\AuthRepository.class
+de\hspf\authservice\secure\TestSecureController.class
+de\hspf\auth\Account.class
+de\hspf\authservice\secure\MPJWTToken.class
+de\hspf\authservice\client\ClientController.class
+de\hspf\authservice\config\ConfigTestController.class
+de\hspf\authservice\metric\MetricController.class
+de\hspf\authservice\resilient\ResilienceController.class
+de\hspf\auth\AuthService.class
