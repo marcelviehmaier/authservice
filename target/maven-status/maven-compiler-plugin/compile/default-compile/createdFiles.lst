@@ -1,7 +1,7 @@
 de\hspf\auth\AuthController.class
 de\hspf\auth\AuthRepository.class
-de\hspf\authservice\AuthserviceRestApplication.class
 de\hspf\jwt\JWTTokenProvider.class
 de\hspf\auth\Account.class
 de\hspf\jwt\MPJWTToken.class
+de\hspf\main\AuthserviceRestApplication.class
 de\hspf\auth\AuthService.class

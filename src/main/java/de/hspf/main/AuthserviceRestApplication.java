@@ -1,4 +1,4 @@
-package de.hspf.authservice;
+package de.hspf.main;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.ApplicationPath;
